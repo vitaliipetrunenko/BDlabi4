@@ -1,6 +1,6 @@
 <?php
 
-$dblocation = "localhost";
+$dblocation = "127.0.0.1";
 $dbuser = "root";
 $dbpassword = "";
 $dbbase = "bada2s";
@@ -36,10 +36,14 @@ if(password_verify($_SESSION['password'], $hash))
   $dbuser=$_SESSION['username'];
   $dbpassword=$_SESSION['password'];
   
+echo $dbuser;
+echo $dbpassword;
+
   $dbcon=@mysqli_connect($dblocation,$dbuser,$dbpassword);
   if(!$dbcon)
     {
-      exit("<P> Сервер не доступний </P>");
+      echo ('Connect Error: ' . mysqli_connect_error());
+      exit("<P> Сервер не доступний2 </P>");
     } else
     {
     echo "Зв'язок встановлено";

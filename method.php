@@ -1,4 +1,4 @@
-<form action="metod.php">
+<!-- <form action="metod.php">
   Name firm:<br>
   <input type="text" name="name_f"><br>
   Address firm:<br>
@@ -6,7 +6,7 @@
   Tel. firm:<br>
   <input type="text" name="tel_f"><br><br>
   <input type="submit" value="Додати запис">
-</form>
+</form> -->
 
 
 <?php

@@ -11,6 +11,7 @@
    <h1>запросики</h1> 
 <a href="options.php">options</a>
 <a href="login.php">login</a>
+<a href="lab4.php">No-injection queries</a>
 <?php
 $servername = "localhost";
 $username = "root";

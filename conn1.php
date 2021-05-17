@@ -1,7 +1,7 @@
 <?php
 
 
-$dblocation = "localhost";
+$dblocation = "127.0.0.1";
 $dbuser = "root";
 $dbpassword = "";
 $dbbase = "bada2s";
@@ -21,6 +21,6 @@ if(!mysqli_select_db($dbcon,$dbbase))
   }
 else
   {
-    echo "<P>Зв'язок з базою 'avto' встановлено</P>";
+    echo "<P>Зв'язок з базою встановлено</P>";
   }
 ?>
